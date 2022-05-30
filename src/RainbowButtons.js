@@ -18,16 +18,16 @@ export default function RainbowButton() {
         //MUI Button Component
         <Button
         // inline CSS to render the color of the button as well as the label text within the button
-        style = {{backgroundColor: button.label, color: 'white'}}
+        style = {{backgroundColor: button, color: 'white'}}
         //displays the button label on then button 
-        key = {button.label}
+        key = {button}
         //click event to display in the console the name/label of each button once it's clicked
-        onClick = {() => console.log('This button is: ', button.label)}
+        onClick = {() => console.log('This button is: ', button)}
         >
         {/* adds the label text to the button */}
-        {button.label}
+        {button}
         </Button>
       ))}
     </div>
   );
-};
+}
