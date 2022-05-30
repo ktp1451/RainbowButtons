@@ -13,7 +13,9 @@ export default function RainbowButton() {
   //return statement that returns what is going to be displayed on the page every time you use the RainbowButton component
   return (
     <div className="RainbowButton">
-      {/* loop through btnColorArray to create the MUI Button Component for each item in the array and using the item to label/handle the onclick event => */}
+      {/* I'm looping through the btnColorArray where buttonColor is the current item in the array.
+        Through each iteration of the loop i'm creating a Button (the MUI Button component) and i'm using the parameter I'm passing in (buttonColor) to:
+        change the background color, display the name as the key, I'm then passing it into the event handler where where it'll know which color to print in the console */}
       { btnColorArray.map((buttonColor) => (
         //MUI Button Component
         <Button
