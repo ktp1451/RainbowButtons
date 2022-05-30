@@ -10,7 +10,7 @@ export default function RainbowButtons() {
 
     //an object is composed of key value pairs
     //const exampleObject = {
-	    //left side of the colon is the key : right side the value;
+	  //left side of the colon is the key : right side the value;
     //}
     { color: 'red', label: 'red' },
     { color: 'orange', label: 'orange' },
@@ -30,7 +30,7 @@ export default function RainbowButtons() {
           <Button 
             //inline CSS to render the color of the button as well as the label text within the button
             style={{backgroundColor: button.label, color: "white"}}
-            //
+            //displays the button label on the button 
             key={button.label} 
             //click event to display in the console the name/label of each button once it's clicked
             onClick={() => console.log('this button is: ', button.label)}
@@ -42,5 +42,3 @@ export default function RainbowButtons() {
     </div>
   );
 }
-
-
