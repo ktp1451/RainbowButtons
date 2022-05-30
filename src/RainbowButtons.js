@@ -14,18 +14,18 @@ export default function RainbowButton() {
   return (
     <div className="RainbowButton">
       {/* loop through btnColorArray to create the MUI Button Component for each item in the array and using the item to label/handle the onclick event => */}
-      { btnColorArray.map((button) => (
+      { btnColorArray.map((buttonColor) => (
         //MUI Button Component
         <Button
         // inline CSS to render the color of the button as well as the label text within the button
-        style = {{backgroundColor: button, color: 'white'}}
+        style = {{backgroundColor: buttonColor, color: 'white'}}
         //displays the button label on then button 
-        key = {button}
+        key = {buttonColor}
         //click event to display in the console the name/label of each button once it's clicked
-        onClick = {() => console.log('This button is: ', button)}
+        onClick = {() => console.log('This button is: ', buttonColor)}
         >
         {/* adds the label text to the button */}
-        {button}
+        {buttonColor}
         </Button>
       ))}
     </div>
