@@ -31,7 +31,7 @@ export default function allTheCake() {
 
     const cakeValues = Object.values(cakeArray);
     console.log('Array of cake values', cakeValues);
-    console.log('Flavor of cake 2: ', cakeValues[2]);
+    console.log('Flavor of cake 2: ', cakeValues[1]);
     // console.log('Flavor of cake 2: ', cakeValues.flavor.flavor2);
     
 

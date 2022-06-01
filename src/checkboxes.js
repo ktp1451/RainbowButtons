@@ -40,7 +40,7 @@ export default function Checkboxes() {
 
     const checkValues = Object.values(checkboxArray);
     console.log('Array of checkbox values: ', checkValues);
-    console.log('Color of checkbox: ', )
+    console.log('Color of checkbox 2: ', checkValues[2])
     // console.log('Color of checkbox: ', checkValues[2.flavor2]);
     return (
         
