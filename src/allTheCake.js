@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { capitalize } from '@mui/material';
 import { type } from '@testing-library/user-event/dist/type';
 
-export default function circle() {
+export default function allTheCake() {
 
     const cakeArray = [
         { type:'cheesecake', 
@@ -48,6 +48,7 @@ export default function circle() {
                 {cakes.type}
                 </Button>
             ))}
+            <br></br>
         </div>
     );
 

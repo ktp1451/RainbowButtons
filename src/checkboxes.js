@@ -42,14 +42,16 @@ export default function Checkboxes() {
     console.log('Array of checkbox values: ', checkValues);
     console.log('Color of checkbox: ', )
     // console.log('Color of checkbox: ', checkValues[2.flavor2]);
-
     return (
+        
+        
       <div>
-          <h2>Genate would like to provide you important information regarding your genetic test and pre-natal nutrition as well as updates regarding the status of your test results?</h2>
-
+          <br></br>
         { checkboxArray.map((checkOptions) => (
+            
             <FormGroup>
-            <FormControlLabel value="Opt in for Important information" control={<Checkbox 
+            <FormControlLabel value="Opt in for Important information" control = {
+            <Checkbox 
             style = {{backgroundColor: checkOptions.color}}
             onClick = {() => console.log('This checkbox is: ', checkOptions.color)}
             
