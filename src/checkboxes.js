@@ -1,47 +1,73 @@
 import React from 'react';
 import './App.css';
 import Checkbox from '@mui/material/Checkbox';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
 
 export default function Checkboxes() {
-    const [checked, setChecked] = React.useState([true, false]);
+    // const [checked, setChecked] = React.useState([true, false]);
 
     const checkboxArray = [
         {
             id: 1,
             checked: true,
-            label: 'Opt in for Important information'
+            label: 'Check me I/m green',
+            color: 'green'
         },
         {
             id: 2,
             checked: true,
-            label: 'Opt in for Updates'
+            label: 'Check me I/m red',
+            color: 'red'
         },
         {
             id: 3,
             checked: true,
-            label: 'Email'
+            label: 'Check me I/m yellow',
+            color: 'yellow'
         },
         {
+        
             id: 4,
             checked: true,
-            label: 'SMS'
+            label: 'Check me I/m blue',
+            color: 'blue'
         }
     ]
+
+    console.log(checkboxArray)
+
+    const checkValues = Object.values(checkboxArray);
+    console.log('Array of checkbox values: ', checkValues);
+    console.log('Color of checkbox: ', )
+    // console.log('Color of checkbox: ', checkValues[2.flavor2]);
 
     return (
       <div>
           <h2>Genate would like to provide you important information regarding your genetic test and pre-natal nutrition as well as updates regarding the status of your test results?</h2>
 
-        { checkboxArray.map((checkOptions, index) => (
-            <Checkbox
+        { checkboxArray.map((checkOptions) => (
+            <FormGroup>
+            <FormControlLabel value="Opt in for Important information" control={<Checkbox 
+            style = {{backgroundColor: checkOptions.color}}
+            onClick = {() => console.log('This checkbox is: ', checkOptions.color)}
             
-            key = {index}
+            />} label='Click Me' />
+            {/* <Checkbox
+            style = {{backgroundColor: checkOptions.color}}
+
+            label = {checkOptions.label}
+
+            onClick = {() => console.log('This checkbox is: ', checkOptions.color)}
             >
             {checkOptions.label}
-            </Checkbox>
-        )) }
+            </Checkbox> */}
+            </FormGroup>
+            )) 
+        }
 
       </div>
     );
-  }
+}
 
