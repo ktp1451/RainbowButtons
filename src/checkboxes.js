@@ -32,12 +32,12 @@ export default function Checkboxes() {
       <div>
           <h2>Genate would like to provide you important information regarding your genetic test and pre-natal nutrition as well as updates regarding the status of your test results?</h2>
 
-        { checkboxArray.map((checked) => (
+        { checkboxArray.map((checkOptions, index) => (
             <Checkbox
             
-            key = {checked}
+            key = {index}
             >
-            {checked}
+            {checkOptions.label}
             </Checkbox>
         )) }
 

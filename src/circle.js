@@ -41,7 +41,7 @@ export default function circle() {
                 <Button
                 style = {{backgroundColor: cakes.color, textTransform: "capitalize"}}
 
-                // key = {index}
+                key = {index}
 
                 onClick = {() => console.log('This cake is: ', cakes.flavor.flavor2)}
                 >
