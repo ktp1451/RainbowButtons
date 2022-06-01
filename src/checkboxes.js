@@ -50,7 +50,7 @@ export default function Checkboxes() {
         { checkboxArray.map((checkOptions) => (
             
             <FormGroup>
-            <FormControlLabel value="Opt in for Important information" control = {
+            <FormControlLabel value="Click Me" control = {
             <Checkbox 
             style = {{backgroundColor: checkOptions.color}}
             onClick = {() => console.log('This checkbox is: ', checkOptions.color)}
