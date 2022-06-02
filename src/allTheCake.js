@@ -39,7 +39,7 @@ export default function allTheCake() {
         <div>
             { cakeArray.map((cakes, index) => (
                 <Button
-                style = {{backgroundColor: cakes.color, textTransform: "capitalize"}}
+                style = {{backgroundColor: cakes.color, textTransform: "capitalize", color: 'black'}}
 
                 key = {index}
 
